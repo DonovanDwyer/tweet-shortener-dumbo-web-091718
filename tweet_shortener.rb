@@ -22,6 +22,7 @@ def word_substituter(tweet_str)
     dictionary.each do |key, val|
       if key == tweet[i]
         tweet[i] = val
+      end
     i += 1
   end
   tweet.join(" ")
