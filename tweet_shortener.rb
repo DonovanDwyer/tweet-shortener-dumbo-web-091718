@@ -21,6 +21,7 @@ def word_substituter(tweet_str)
     dictionary.map do |key, value|
       if word.to_s == key.to_s
         word = value
+        pry.binding
       end
     end
   end
