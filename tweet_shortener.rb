@@ -20,7 +20,7 @@ def word_substituter(tweet_str)
   i = 0
   while i < tweet.length
     dictionary.each do |key, val|
-      if key == tweet[i]
+      if key.to_s == tweet[i]
         tweet[i] = val
       end
     end
