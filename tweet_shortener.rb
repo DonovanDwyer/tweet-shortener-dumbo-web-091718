@@ -18,6 +18,7 @@ end
 def word_substituter(tweet_str)
   tweet = tweet_str.split(" ")
   tweet.map do |word|
+    pry.binding
     dictionary.map do |key, value|
       if key == word
         word = value
