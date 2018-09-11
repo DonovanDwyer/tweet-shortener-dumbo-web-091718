@@ -28,4 +28,6 @@ def word_substituter(tweet_str)
   tweet.join(" ")
 end
 
+word_substituter()
+
 #pry.binding
