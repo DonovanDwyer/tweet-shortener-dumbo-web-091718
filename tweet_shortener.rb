@@ -19,7 +19,9 @@ def word_substituter(tweet_str)
   tweet = tweet_str.split(" ")
   i = 0
   while i < tweet.length
-    tweet[i] = "balls"
+    dictionary.each do |key, val|
+      if key == tweet[i]
+        tweet[i] = val
     i += 1
   end
   tweet.join(" ")
