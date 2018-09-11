@@ -17,13 +17,10 @@ end
 
 def word_substituter(tweet_str)
   tweet = tweet_str.split(" ")
-  shortened = []
   tweet.map do |word|
     dictionary.map do |key, value|
       if word.to_s == key.to_s
-        shortened << value.to_s
-      else
-        shortened << word.to_s
+        word = value
       end
     end
   end
