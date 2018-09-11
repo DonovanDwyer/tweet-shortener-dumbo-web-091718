@@ -18,11 +18,7 @@ end
 def word_substituter(tweet_str)
   tweet = tweet_str.split(" ")
   tweet.each do |word|
-    dictionary.each do |key, value|
-      if key == word
-        word = value
-      end
-    end
+   word = "cum"
   end
   tweet.join(" ")
 end
