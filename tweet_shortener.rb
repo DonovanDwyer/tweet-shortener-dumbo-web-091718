@@ -24,7 +24,7 @@ def word_substituter(tweet_str)
       end
     end
   end
-  shortened.join(" ")
+  tweet.join(" ")
 end
 
 #pry.binding
