@@ -21,13 +21,9 @@ def word_substituter(tweet_str)
     dictionary.map do |key, value|
       if word.to_s == key.to_s
         word = value
-        pry.binding
       end
     end
   end
   tweet.join(" ")
 end
-
-word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
-
-#pry.binding
+pry.binding
