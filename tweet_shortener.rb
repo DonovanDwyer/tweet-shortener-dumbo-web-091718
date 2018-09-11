@@ -17,8 +17,10 @@ end
 
 def word_substituter(tweet_str)
   tweet = tweet_str.split(" ")
-  tweet.collect do |word|
-   word = "cum"
+  i = 0
+  while i < tweet.length
+    tweet[i] = "balls"
+    i += 1
   end
   tweet.join(" ")
 end
