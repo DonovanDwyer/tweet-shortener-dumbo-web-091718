@@ -22,6 +22,8 @@ def word_substituter(tweet_str)
     dictionary.each do |key, val|
       if key.to_s == tweet[i]
         tweet[i] = val
+      elsif key.to_s.capitalize == tweet[i]
+        tweet[i] = val.capitalize
       end
     end
     i += 1
